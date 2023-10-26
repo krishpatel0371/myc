@@ -1,0 +1,37 @@
+#include<stdio.h>
+void main()
+{
+int i,j,mat1[3][3],mat2[3][3],add[3][3];
+printf("\nMat1\n");
+for(i=0;i<3;i++){
+	for(j=0;j<3;j++){
+		printf("mat1[%d][%d]",i,j);
+		scanf("%d",&mat1[i][j]);
+	}
+}
+
+printf("\nMat2\n");
+for(i=0;i<3;i++){
+	for(j=0;j<3;j++){
+		printf("mat2[%d][%d]",i,j);
+		scanf("%d",&mat2[i][j]);
+	}
+}
+
+for(i=0;i<3;i++){
+	for(j=0;j<3;j++){
+	add[i][j]=mat1[i][j]+mat2[i][j];
+	}
+}
+printf("addition\n");
+for(i=0;i<3;i++){
+	for(j=0;j<3;j++){
+printf("  %d",add[i][j]);
+if(j==2)
+{
+	printf("\n");
+}
+	}
+}
+
+}
